@@ -1,0 +1,11 @@
+openapi: 3.0.0
+info:
+  title: Nova Web3 API
+  version: 1.0.0
+servers:
+  - url: https://web3.luniverse.io/v1
+paths:
+  /helloWorld/test/testapi:
+    $ref: 'test1.yaml#/paths/{protocol}/{network}/accounts/{address}/balance'
+  /api2:
+    $ref: 'test2.yaml#/paths/{protocol}/{network}/accounts/{address}/account'
