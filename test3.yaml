@@ -1,14 +1,4 @@
 openapi: 3.0.0
-info:
-  title: benbendrm API
-  version: 1.0.2
-servers: 
-  - url: https://luniverse.io/v1/
-components:
-  securitySchemes:
-    bearerAuth:
-      type: http
-      scheme: bearer
 tags:
   - name: Luniverse API
     description: Luniverse API에 대한 정보
