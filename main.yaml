@@ -24,6 +24,6 @@ paths:
     tags: 
       - Ben Test API
   /benben:
-    $ref: './test3.yaml#/paths/~1ben'
+    $ref: './test3.yaml#/paths/~1benben'
     tags:
       - Ben Test API
