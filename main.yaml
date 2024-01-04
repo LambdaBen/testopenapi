@@ -20,6 +20,6 @@ paths:
   tags: 
     - Ben Test API
   /{protocol}/{network}/accounts/{address}/helloworld/myworld:
-    $ref: './test2.yaml#/paths/~1{protocol}~1{network}~1accounts~1{address}~1helloworld'
+    $ref: './test2.yaml#/paths/~1{protocol}~1{network}~1accounts~1{address}~1helloworld~1myworld'
   tags: 
     - Ben Test API
