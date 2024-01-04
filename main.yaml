@@ -15,5 +15,5 @@ tags:
 paths:
   /{protocol}/{network}/accounts/{address}/balance:
     $ref: './test1.yaml#/paths/~1{protocol}~1{network}~1accounts~1{address}~1balance'
-  /{protocol}/{network}/accounts/{address}/account:
-    $ref: './test2.yaml#/paths/~1{protocol}~1{network}~1accounts~1{address}~1account'
+  /{protocol}/{network}/accounts/{address}/helloworld:
+    $ref: './test2.yaml#/paths'
