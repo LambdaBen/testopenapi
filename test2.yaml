@@ -11,7 +11,7 @@ tags:
   - name: Account Management
     description: 계정 관리 관련 API
 paths:
-  /{protocol}/{network}/accounts/{address}/account:
+  /{protocol}/{network}/accounts/{address}/helloworld:
     get:
       security: 
         - bearerAuth : []
