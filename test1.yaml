@@ -1,26 +1,12 @@
-openapi: 3.0.0
-info:
-  title: Luniverse API
-  version: 1.0.2
-servers: 
-    - url: https://luniverse.io/v1/
-components:
-  securitySchemes:
-    bearerAuth:
-      type: http
-      scheme: bearer
-tags:
-  - name: Account Management
-    description: 계정 관리 관련 API
-paths:
+paths:  
   /{protocol}/{network}/accounts/{address}/balance:
     get:
       security: 
         - bearerAuth : []
-      # tags:
-      #   - Account Management
+      tags:
+        - Account Management
       summary: "특정 주소의 계정 잔액 조회"
-      operationId: test1
+      operationId: operation2
       parameters:
         - name: protocol
           in: path

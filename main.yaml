@@ -17,13 +17,4 @@ tags:
 paths:
   /{protocol}/{network}/accounts/{address}/balance:
     get:
-      $ref: './test1.yaml#/paths/~1{protocol}~1{network}~1accounts~1{address}~1balance'
-      tags: Account Management
-  /{protocol}/{network}/accounts/{address}/helloworld/myworld:
-    get:
-      $ref: './test2.yaml#/paths/~1{protocol}~1{network}~1accounts~1{address}~1helloworld~1myworld'
-      tags: Ben Test API
-  /benben:
-    post:
-      $ref: './test3.yaml#/paths/~1benben'
-      tags: Ben Test API
+      $ref: './test1.yaml#/paths/~1{protocol}~1{network}~1accounts~1{address}~1balance/get'
