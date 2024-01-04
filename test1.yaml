@@ -20,7 +20,7 @@ paths:
       # tags:
       #   - Account Management
       summary: "특정 주소의 계정 잔액 조회"
-      operationId: listAccountBalance
+      operationId: test1
       parameters:
         - name: protocol
           in: path
