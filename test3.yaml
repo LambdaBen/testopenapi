@@ -1,0 +1,93 @@
+openapi: 3.0.0
+info:
+  title: benbendrm API
+  version: 1.0.2
+servers: 
+  - url: https://luniverse.io/v1/
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+tags:
+  - name: Luniverse API
+    description: Luniverse API에 대한 정보
+  - name: benben API
+    description : benben API에 대한 정보
+paths:
+  /helloWorld:
+    get:
+      security: 
+        - bearerAuth: []
+      tags:
+        - Luniverse API
+      summary: "Hello World API"
+      operationId: helloWorld
+      responses:
+        '200':
+          description: 성공적인 응답
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Hello, World!"
+  /benben:
+    get:
+      security: 
+        - bearerAuth: []
+      tags:
+        - benben API
+      summary : listbenbenAccount
+      operationId: benben
+      responses:
+        '200':
+          description: 성공적인 응답
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Hello, World!"
+  /newapi:
+      post:
+        security: 
+          - bearerAuth: []
+        tags:
+          - hellowhellow API
+        summary: myApiBen
+        operationId: hellohello
+        responses:
+          '200':
+            description: 성공적인 응답
+            content:
+              application/json:
+                schema:
+                  type: object
+                  properties:
+                    message:
+                      type: string
+                      example: "Hello, World!"
+  /accountacccount:
+      get:
+        security: 
+          - bearerAuth: []
+        tags:
+          - benben API
+        summary: myApiBen
+        operationId: newAPi
+        responses:
+          '200':
+            description: 성공적인 응답
+            content:
+              application/json:
+                schema:
+                  type: object
+                  properties:
+                    message:
+                      type: string
+                      example: "Hello, World!"

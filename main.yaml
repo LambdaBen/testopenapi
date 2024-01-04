@@ -1,11 +1,19 @@
 openapi: 3.0.0
 info:
-  title: Nova Web3 API
-  version: 1.0.0
-servers:
-  - url: https://web3.luniverse.io/v1
+  title: Luniverse API
+  version: 1.0.2
+servers: 
+  - url: https://luniverse.io/v1/
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+tags:
+  - name: Account Management
+    description: 계정 관리 관련 API
 paths:
-  /helloWorld/test/testapi:
-    $ref: 'test1.yaml#/paths/{protocol}/{network}/accounts/{address}/balance'
-  /api2:
-    $ref: 'test2.yaml#/paths/{protocol}/{network}/accounts/{address}/account'
+  /{protocol}/{network}/accounts/{address}/balance:
+    $ref: './test1.yaml#/paths/~1{protocol}~1{network}~1accounts~1{address}~1balance'
+  /{protocol}/{network}/accounts/{address}/account:
+    $ref: './test2.yaml#/paths/~1{protocol}~1{network}~1accounts~1{address}~1account'
