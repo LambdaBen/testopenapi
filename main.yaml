@@ -3,7 +3,7 @@ info:
   title: Luniverse API
   version: 1.0.2
 servers: 
-  - url: https://luniverse.io/v1/
+  - url: https://luniverse.io/v2/
 components:
   securitySchemes:
     bearerAuth:
