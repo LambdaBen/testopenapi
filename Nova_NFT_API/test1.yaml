@@ -3,10 +3,10 @@ paths:
     get:
       security: 
         - bearerAuth : []
-      # tags:
-      #   - Account Management
-      # summary: "특정 주소의 계정 잔액 조회"
-      operationId: account
+      tags:
+        - Account Abstarct API
+      summary: "getAccountAbstract"
+      operationId: getaccountabstract
       parameters:
         - name: protocol
           in: path

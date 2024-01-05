@@ -9,18 +9,10 @@ components:
     bearerAuth:
       type: http
       scheme: bearer
-tags:
-  - name: Account Management
-    description: 계정 관리 관련 API
-  - name: Ben Test API
-    description: Integration API Test
 paths:
   /{protocol}/{network}/accounts/{address}/balance:
     get:
       $ref: './Nova_NFT_API/test1.yaml#/paths/~1{protocol}~1{network}~1accounts~1{address}~1balance/get'
-        tags:
-          - Account Management
-        summary: "Account API"
   /{protocol}/{network}/accounts/{address}/helloworld/myworld :
     post:
       $ref: './Nova_Account_API/test2.yaml#/path~/~1{protocol}~1{network}~1accounts~1{address}~1helloworld~1myworld/post'
