@@ -1,6 +1,8 @@
 # paths:  
 #   /{protocol}/{network}/{address}/{contract}/nft:
     get:
+      security: 
+        - bearerAuth : []
       #Title 하단의 부 카테고리 
       tags:
         - Nova NFT API
