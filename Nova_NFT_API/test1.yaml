@@ -3,9 +3,12 @@ paths:
     get:
       security: 
         - bearerAuth : []
+      #Title 하단의 부 카테고리 
       tags:
         - Account Abstarct API
+      #API 페이지 이름 메뉴 노출
       summary: "getAccountAbstract"
+      #domain의 resource, URL
       operationId: getaccountabstract
       parameters:
         - name: protocol
