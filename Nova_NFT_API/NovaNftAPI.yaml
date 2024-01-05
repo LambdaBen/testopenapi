@@ -1,4 +1,3 @@
-paths:
   /{protocol}/{network}/{address}/{contract}/nft:
     $ref: './getListMyNft.yaml'
   /{protocol}/{network}/{address}/{contract}/nft2:
