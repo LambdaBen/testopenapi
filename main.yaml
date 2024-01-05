@@ -17,7 +17,8 @@ components:
 paths:
   /{protocol}/{network}/accounts/{address}/balance:
     get:
-      $ref: './Nova_NFT_API/test1.yaml#/paths/~1{protocol}~1{network}~1accounts~1{address}~1balance/get'
+      # $ref: './Nova_NFT_API/test1.yaml#/paths/~1{protocol}~1{network}~1accounts~1{address}~1balance/get'
+      $ref: './Nova_NFT_API/test1.yaml#/paths/{protocol}/{network}/accounts/{address}/balance/get'
   /{protocol}/{network}/accounts/{address}/helloworld/myworld :
     post:
       $ref: './Nova_Account_API/test2.yaml#/paths/~1{protocol}~1{network}~1accounts~1{address}~1helloworld~1myworld/post'
