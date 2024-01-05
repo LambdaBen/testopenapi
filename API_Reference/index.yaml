@@ -8,3 +8,5 @@
     $ref: './Nova_Marketdata_API/getOpenseaData.yaml'
   /{protocol}/{network}/{address}/{contract}/upbit/nft:
     $ref: './Nova_Marketdata_API/getUpbitData.yaml'
+  /{protocol}/{network}/{address}/{contract}/bithumb/nft:
+    $ref: './Nova_Marketdata_API/getbithumbData.yaml'
