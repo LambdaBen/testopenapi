@@ -1,4 +1,0 @@
-  /{protocol}/{network}/{address}/{contract}/nft:
-    $ref: './getListMyNft.yaml'
-  /{protocol}/{network}/{address}/{contract}/nft2:
-    $ref: './getListMyNft2.yaml'

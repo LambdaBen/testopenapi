@@ -10,6 +10,5 @@ components:
       type: http
       scheme: bearer
 paths:
-  $ref: './Nova_NFT_API/index.yaml'
-  $ref: './Nova_Marketdata_API/index.yaml'
+  $ref: './API_Reference/index.yaml'
 
