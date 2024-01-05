@@ -6,7 +6,11 @@
       #Title 하단의 부 카테고리 
       tags:
         - Nova NFT API
-      #API 페이지 이름 메뉴 노출
+      description: | 
+      문서 테스트 중입니다.
+      ### 해당 문서는 다음과 같습니다.
+      **곧 회의가 있습니다.**
+      `코드는 여기에`
       summary: "getListMyNft2"
       #domain의 resource, URL
       operationId: getlistmynft2
