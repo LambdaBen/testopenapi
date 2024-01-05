@@ -1,5 +1,5 @@
-paths:  
-  /{protocol}/{network}/{address}/{contract}/nft:
+# paths:  
+#   /{protocol}/{network}/{address}/{contract}/nft:
     get:
       security: 
         - bearerAuth : []

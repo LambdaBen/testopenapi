@@ -1,5 +1,5 @@
 paths:
   /{protocol}/{network}/{address}/{contract}/nft:
     $ref: './getListMyNft.yaml'
-  /nftapi2:
+  /{protocol}/{network}/{address}/{contract}/nft2:
     $ref: './getListMyNft2.yaml'
