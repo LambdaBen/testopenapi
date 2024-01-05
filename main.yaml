@@ -9,6 +9,11 @@ components:
     bearerAuth:
       type: http
       scheme: bearer
+tags:
+  - name: Account Management
+    description: 계정 관리 관련 API
+  - name: Ben Test API
+    description: Integration API Test
 paths:
   /{protocol}/{network}/accounts/{address}/balance:
     get:
