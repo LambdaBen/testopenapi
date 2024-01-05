@@ -1,15 +1,18 @@
-paths:  
-  /{protocol}/{network}/accounts/{address}/balance:
     get:
       security: 
         - bearerAuth : []
       #Title 하단의 부 카테고리 
       tags:
-        - Account Abstarct API
-      #API 페이지 이름 메뉴 노출
-      summary: "getAccountAbstract"
+        - Nova MarketData API
+      description: | 
+        문서 테스트 중입니다.
+        ### 해당 문서는 다음과 같습니다.
+        **곧 회의가 있습니다.**
+        `코드는 여기에`
+      #실제 API 페이지의 이름
+      summary: "getUpbitData"
       #domain의 resource, URL
-      operationId: getaccountabstract
+      operationId: getUpbitData
       parameters:
         - name: protocol
           in: path
@@ -24,6 +27,11 @@ paths:
           schema:
             type: string
         - name: address
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: contract
           in: path
           required: true
           schema:

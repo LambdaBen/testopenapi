@@ -1,0 +1,4 @@
+  /{protocol}/{network}/{address}/{contract}/nft:
+    $ref: './getOpenseaData.yaml'
+  /{protocol}/{network}/{address}/{contract}/nft2:
+    $ref: './getUpbitData.yaml'
