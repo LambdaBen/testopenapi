@@ -1,24 +1,18 @@
-openapi: 3.0.0
-info:
-  title: Luniverse API
-  version: 1.0.2
-components:
-  securitySchemes:
-    bearerAuth:
-      type: http
-      scheme: bearer
-tags:
-  - name: Account Management
-    description: 계정 관리 관련 API
-paths:
-  /{protocol}/{network}/accounts/{address}/helloworld/myworld:
-    post:
+    delete:
       security: 
         - bearerAuth : []
+      #Title 하단의 부 카테고리 
       tags:
-        - Hello World API
-      summary: "Hello World API"
-      operationId: operation2
+        - Nova MarketData API
+      description: | 
+        문서 테스트 중입니다.
+        ### 해당 문서는 다음과 같습니다.
+        **곧 회의가 있습니다.**
+        `코드는 여기에`
+      #실제 API 페이지의 이름
+      summary: "getCoinoneData"
+      #domain의 resource, URL
+      operationId: getCoinoneData
       parameters:
         - name: protocol
           in: path
@@ -33,6 +27,11 @@ paths:
           schema:
             type: string
         - name: address
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: contract
           in: path
           required: true
           schema:
